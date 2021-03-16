@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body img{
+    width: 100%;
+}
+
+
+header{
+    margin: 0 auto;
+}
+
+#bandera-eeuu{
+    float: right;
+    position: absolute;
+    width: 40px;
+}
+
+.cuadro h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 20px;
+    color: rgb(18, 89, 130);
+}
+
+.cuadro{
+    position: absolute;
+    width: 650px;
+    top: 180px;
+    left: 150px;
+}
+
+.cuadro p{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+}
+
+.ver-mas{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    outline: none;
+    font-size: 14px;
+    padding: 8px;
+    margin-top: 25px;
+    text-align: center;
+    color: rgb(36, 129, 184);
+    border: 2px solid rgb(36, 129, 184);
+    width: 100px;
+}
+
+.ver-mas:hover{
+    transition: all ease.5s;
+    background: cornflowerblue;
+    color: white;
+}
+
+body{
+    background: #F8FDFF;
+}
+
+
+.servicio-titulo{
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(18, 89, 130)
+}
+
+#servicio-titulo{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(18, 89, 130)
+}
+
+.servicios{
+    text-align: center;
+    padding-top: 113px;
+    text-align: center;
+    position: relative;
+    background-image: url(imagenes/programador.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+}
+
+.cuadros{
+    position: relative;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    text-align: center;
+    width: 200px;
+    margin: 40px ;
+    padding: 8px;
+    border: 1px solid rgb(36, 129, 184);
+    margin: 0 auto;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.proyectos{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    row-gap: 25px;
+    background: #FFFFFF;
+}
+
+#background2{
+    -webkit-transform:rotate(180deg);
+    position: absolute;
+    width: 100%;
+}
+
+.cajas{
+    text-align: center;
+    position: relative;
+}
+
+.cajas img{
+    width: 215px;
+}
+
+.proyectos img:hover{
+    transition-delay: 0.1s;
+    width: 220px;
+}
