@@ -1,4 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 *{
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
 }
@@ -10,6 +16,12 @@ body img{
 
 header{
     margin: 0 auto;
+}
+
+#bandera-spain{
+    float: right;
+    position: absolute;
+    width: 40px;
 }
 
 #bandera-eeuu{
@@ -59,6 +71,10 @@ body{
     background: #F8FDFF;
 }
 
+#background2{
+    width: 500px;
+    position: absolute;
+}
 
 .servicio-titulo{
     padding-top: 50px;
@@ -68,10 +84,19 @@ body{
 }
 
 #servicio-titulo{
-    margin-top: 50px;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: rgb(18, 89, 130)
+    font-size: 50px;
+    margin: 50px 50px 50px 150px;
+    text-align: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    color:#ECF1F8;
+}
+
+#works-titulo{
+    font-size: 50px;
+    margin: 50px 50px 50px 150px;
+    text-align: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #ECF1F8;
 }
 
 .servicios{
@@ -79,9 +104,6 @@ body{
     padding-top: 113px;
     text-align: center;
     position: relative;
-    background-image: url(imagenes/programador.png);
-    background-repeat: no-repeat;
-    background-size: 400px;
 }
 
 .cuadros{
@@ -106,13 +128,7 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows:1fr 1fr;
     row-gap: 25px;
-    background: #FFFFFF;
-}
-
-#background2{
-    -webkit-transform:rotate(180deg);
-    position: absolute;
-    width: 100%;
+    background: #F8FDFF;
 }
 
 .cajas{
@@ -128,3 +144,135 @@ body{
     transition-delay: 0.1s;
     width: 220px;
 }
+
+footer{
+    padding: 100px;
+    background: #F8FDFF;
+}
+
+#contact-title{
+    font-size: 50px;
+    margin: 50px;
+    text-align: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #ECF1F8;
+}
+
+.container-footer{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-footer img {
+    width: 20px;
+}
+
+.redes {
+    border: 1px solid rgb(160, 160, 160);
+    box-shadow:  60px 16px rgb(160, 160, 160);
+    -webkit-box-shadow: 15px 16px 7px  rgb(160, 160, 160);
+}
+
+.redes img{
+    margin-bottom: 30px;
+}
+
+.redes h2 {
+    padding: 20px;
+}
+
+.redes a{
+    display: inline;
+    margin-left: 23px;
+}
+
+.contacto {
+    padding-bottom: 28px;
+    border: 1px solid rgb(160, 160, 160);
+    box-shadow:  60px 16px rgb(160, 160, 160);
+    -webkit-box-shadow: 15px 16px 7px  rgb(160, 160, 160);
+}
+
+.contacto p {
+    padding: 5px 5px 5px 20px;
+}
+
+.contacto a {
+    display:flex;
+}
+
+.contacto h2{
+    padding:20px;
+}
+
+
+@media only screen and (max-width:768px) {
+
+    #bandera-spain{
+        position: fixed;
+        top: 0;
+        z-index: auto;
+    }
+
+    #bandera-eeuu{
+        position: fixed;
+        top: 0;
+        z-index: auto;
+    }
+    
+    #background2 {
+        display: none;
+    }
+
+    header{
+        flex-wrap: wrap;
+    }
+    
+    .background {
+        display :none;
+    }
+
+    .cuadro{
+        top: 50px;
+        left: 15px;
+        position: relative;
+        max-width: 90%;
+    }
+
+    .cuadro p{
+        text-align: justify;
+    }
+
+    .servicios{
+        padding: 0;
+    }
+
+    #servicio-titulo{
+        margin: 15%; 
+        padding-top: 30px ;
+    }
+
+    #works-titulo{
+        margin: 15%;
+    }
+    
+    .proyectos{
+        display: inline;
+    }
+
+     #contact-title{
+        margin: 15%;
+        text-align: ;
+    } 
+
+    footer{
+        padding: 15px;
+    }
+
+    .redes{
+        margin-bottom: 20px;
+    }
+
+
+}   
