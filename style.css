@@ -50,8 +50,6 @@ header{
 
 .ver-mas{
     font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    outline: none;
     font-size: 14px;
     padding: 8px;
     margin-top: 25px;
@@ -59,6 +57,11 @@ header{
     color: rgb(36, 129, 184);
     border: 2px solid rgb(36, 129, 184);
     width: 100px;
+}
+
+.ver-mas a {
+    text-decoration: none;
+    outline: none;
 }
 
 .ver-mas:hover{
@@ -141,6 +144,7 @@ body{
 }
 
 .proyectos img:hover{
+    transition: all ease.5s;
     transition-delay: 0.1s;
     width: 220px;
 }
